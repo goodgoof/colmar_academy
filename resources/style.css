@@ -1,0 +1,133 @@
+body {
+  font-family: "Helvetica Neue";
+  color: #141212;
+  font-size: 16px;
+
+}
+
+/* styles for nav*/
+
+.top-nav {
+  background-color: #200942;
+  margin: 0 -15px;
+}
+nav {
+  height: 64px;
+  background-color: #200942;
+
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 16px;
+  color: #bab6c0;
+
+}
+ul li a.logo{
+  background-color: black;
+  width: 20px;
+}
+
+ul li a {
+  color: #bab6c0;
+  text-decoration: none;
+}
+
+ul li:nth-child(1n+3){
+  float: right;
+}
+
+.colmar {
+  height: 32px;
+  letter-spacing: 2px;
+  color: silver;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#academy {
+  font-weight: 150;
+  letter-spacing: 2.5px;
+}
+
+span.bold {
+  font-weight:700;
+  color: #bab6c0;
+}
+
+/*styles for banner*/
+
+.banner {
+  width: 60%;
+  margin: 32px 40px;
+}
+
+.banner_text {
+  width: 450px;
+}
+
+.jumbotron {
+  margin: 0px -15px 0px -15px;
+  background-color: #bab6c0;
+  display: flex;
+  align-items: center;
+  color: #200942;
+
+}
+
+h1.learn, h2.study {
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 60px;
+
+}
+
+.lorem {
+  margin-top: 20px;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  line-height: 40px;
+}
+
+.start {
+  height: 50px;
+  background-color: #141212;
+  color: #bab6c0;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 25px;
+}
+
+/* css styles for section2*/
+.section2 {
+  margin: 0px -15px 0px -15px;
+  background-color: #F7F9EC;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.block,.strategist {
+  padding-bottom: 32px;
+}
+
+p.block,.strategist {
+  width: 60%;
+  margin-left: 40px;
+  letter-spacing: 1.5px;
+  line-height: 35px;
+  color: #9EAE45;
+  display: inline-block;
+
+}
+
+
+
+h2.study {
+  margin-left: 40px;
+  width: 60%;
+  color: #505E04;
+  display: inline-block;
+}
