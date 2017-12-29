@@ -10,39 +10,41 @@ body {
   display: none;
 }
 .top-nav {
-  background-color: #200942;
+  background-color: white;
   margin: 0 -15px;
 }
 nav {
   height: 64px;
-  background-color: #200942;
+  background-color: white;
+  margin-right: 24px;
 
 }
 ul li {
   list-style-type: none;
   display: inline-block;
   padding: 16px;
-  color: #bab6c0;
+  color: darkslategrey;;
 
 }
 img.logo{
-  color:#bab6c0;
-  width: 20px;
+  width: 30px;
+  margin-left: 24px;
 }
 
 ul li a {
-  color: #bab6c0;
+  color: darkslategrey;
   text-decoration: none;
 }
 
-ul li:nth-child(1n+3){
+ul li:nth-child(1n+2){
   float: right;
 }
+
 
 .colmar {
   height: 32px;
   letter-spacing: 2px;
-  color: silver;
+  color: darkslategrey;
   font-size: 30px;
   text-decoration: none;
 }
@@ -50,12 +52,15 @@ ul li:nth-child(1n+3){
 #academy {
   font-weight: 150;
   letter-spacing: 2.5px;
+
 }
 
 span.bold {
   font-weight:700;
-  color: #bab6c0;
+  color: darkslategrey;
+  margin-right: 0px;
 }
+/* media queries for navbar*/
 
 /*styles for banner*/
 
@@ -93,7 +98,7 @@ h1.learn, h2.study {
 
 .start {
   height: 50px;
-  background-color: #141212;
+  background-color: #200942;
   color: #bab6c0;
   border-radius: 5px;
   text-align: center;
@@ -113,6 +118,10 @@ img.banner2 {
   width: 100%;
   margin-bottom: 32px;
 
+}
+
+.mob {
+  display: none;
 }
 .subsection2 {
   width: 60%;
@@ -179,6 +188,10 @@ h2.study {
 }
 /*section3 styles*/
 
+.for_mobile {
+  display: none;
+}
+
 #start {
   letter-spacing: 2px;
   line-height: 60px;
@@ -199,7 +212,6 @@ h2.study {
 
 .section3, h2#start{
   background-color: #bab6c0;
-
 }
 
 .software, .computer, .data, .design, .business, .marketing {
@@ -355,4 +367,165 @@ span {
 .term {
   padding-right: 15px;
   clear: both;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  body {
+    margin: auto;
+    font-size: 14px;
+    border: none;
+  }
+
+  nav {
+    height: 64px;
+    margin: 0px;
+  }
+
+  ul li {
+    padding: 0px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+    margin: 30px;
+  }
+
+  img.banner {
+    width: 100%;
+    margin: 0px;
+  }
+  .jumbotron {
+    background-color: #bab6c0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #200942;
+    width: 100%;
+    margin: 0px;
+
+  }
+
+  h1.learn {
+  font-size: 25px;
+  }
+
+  .banner_text {
+    margin: 32px 16px;
+    width: 90%;
+  }
+
+  .lorem {
+    letter-spacing: none;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 32px;
+  }
+
+  .start {
+    margin-top: 24px;
+    background-color: #200942;
+  }
+  .subsection2 {
+    display: none;
+  }
+
+  .campus, .orientation, .guest {
+    display: none;
+  }
+
+  .subsection3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 16px 16px 32px 16px;
+    border: none;
+  }
+  .flex, .flexi{
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F7F9EC;
+    padding: 0px;
+  }
+
+  #color {
+    background-color: #F7F9EC;;
+  }
+
+  hr {
+    display: none;
+  }
+  img.mob {
+    display: block;
+    width: 95%;
+    margin-right: 16px;
+  }
+  .guest {
+    display: none;
+  }
+
+  .courses {
+    display: none;
+  }
+
+  div.for_mobile {
+    display: block;
+    width:85%;
+    height: 30px;
+    background-color:#bab6c0;
+    margin:8px auto;
+    color: darkslategray;
+    padding: 18px 16px 24px 16px;
+    font-size: 1.25rem;
+  }
+
+  .section3 {
+    background-color: white;
+    width: 100%;
+  }
+
+  h2#start {
+    background-color: white;
+    color: darkslategray;
+    margin-bottom: 16px;
+    letter-spacing: none;
+    font-weight: bold;
+    font-size: 1.75rem;
+    padding: 0px;
+  }
+
+  #thesis {
+  margin-bottom: 16px;
+  margin-top: 32px;
+  background-color: white;
+  color: darkslategray;
+  padding: 0px;
+  }
+
+  #video {
+    width: 100%;
+    margin:0px 0px 24px 0px;
+
+  }
+
+  .row1 {
+    display: none;
+  }
+
+  #study, #block {
+    display: none;
+  }
+
+  span.term, .ft {
+    display: none;
+  }
+
 }

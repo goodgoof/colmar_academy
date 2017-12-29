@@ -14,16 +14,19 @@
   <div class="top-nav">
   <nav class="header">
     <ul class="">
-      <li><img src="./resources/images/ic-logo.svg" class="logo"></li>
-      <li><a href="colmar" class="colmar"><span class="bold">COLMAR</span><span id="academy">ACADEMY</span></a></li>
-      <li><a href="#">On Campus</a></li>
-      <li><a href="#">Online</a></li>
-      <li><a href="#">For Companies</a></li>
-      <li><a href="#">Sign in</a></li>
+      <!--<li><img src="./resources/images/ic-logo.svg" class="logo"></li>-->
+      <li class="desktop"><img src="./resources/images/ic-logo.svg" class="logo">
+        <a href="colmar" class="colmar"><span id="academy">ACADEMY</span><span class="bold">COLMAR</span></a>
+      <li class="desktop"><a href="#">Sign in</a></li>
+      <li class="desktop"><a href="#">For Companies</a></li>
+      <li class="desktop"><a href="#">Online</a></li>
+      <li class="desktop"><a href="#">On Campus</a></li>
 
-      <li><img src="./resources/images/ic-on-campus.svg" class="mobile"></a></li>
-      <li><img src="./resources/images/ic-online.svg" class="mobile"></a></li>
+
       <li><img src="./resources/images/ic-login.svg" class="mobile"></a></li>
+      <li><img src="./resources/images/ic-online.svg" class="mobile"></a></li>
+      <li><img src="./resources/images/ic-on-campus.svg" class="mobile"></a></li>
+      <li><img src="./resources/images/ic-logo.svg" class="mobile"></li>
     </ul>
   </nav>
 </div>
@@ -57,6 +60,7 @@
 
       <div class="flexi" id="nopad">
         <img src="./resources/images/information-orientation.jpg" class="orientation">
+        <img src="./resources/images/information-orientation-mobile.jpg" class="mob">
         <div class="date_time">
           <h2 class="event">Orientation date</h2>
           <p class= "dates">Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -67,7 +71,8 @@
 
      <div class="flexi">
         <img src="./resources/images/information-campus.jpg" class="campus">
-        <div class="date_time">
+        <img src="./resources/images/information-campus-mobile.jpg" class="mob">
+        <div class="date_time" id="date_time">
           <h2 class="event">Our campus</h2>
           <p class= "dates">Find which campus is close by you.</p>
           <a href="#">Read More</a>
@@ -77,6 +82,7 @@
 
      <div class="flexi" id="color">
         <img src="./resources/images/information-guest-lecture.jpg" class="guest">
+        <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mob">
         <div class="date_time">
           <h2 class="event">Our guest lecture</h2>
           <p class= "dates" id="keynote">Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -91,6 +97,14 @@
  <div class="section3">
 
       <h2 id="start">Start Learning</h2>
+
+      <div class="for_mobile" id="engg">Software Engineering</div>
+      <div class="for_mobile" id="comp">Computer art</div>
+      <div class="for_mobile" id="des">Design</div>
+      <div class="for_mobile" id="data">Data</div>
+      <div class="for_mobile" id="bus">Business</div>
+      <div class="for_mobile" id="mark">Marketing</div>
+
 
    <div class="courses">
 
@@ -147,7 +161,7 @@
 <h2 id="thesis">Thesis Exhibit</h2>
 <div class="section4">
 
-  <div class="video">
+  <div class="video" id="video">
     <video source src="./resources/videos/thesis.mp4" type="video/mp4"  autoplay loop></video>
     <h2 class="study" id="study">Reimagine urban</h2>
     <p class="block" id="block">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -178,18 +192,9 @@
 
 
 <footer class="">
-  <p class="copyright">&copy; 2016 Colmar Academy. All rights reserved <span class="term">Privacy</span> <span>Terms</span></p>
+  <p class="copyright">&copy; 2016 Colmar Academy. All rights reserved <span class="term">Privacy</span> <span class="ft">Terms</span></p>
 
 </footer>
-
-
-
-
-
-
-
-
-
 
 </body>
 
